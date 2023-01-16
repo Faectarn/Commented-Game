@@ -1,7 +1,27 @@
-@media (max-width: 800px) {
+@media screen and (max-width: 600px) {
+    /* styles for screens smaller than 600px */
     #root {
-        margin: 0 auto;
-        padding: 5px; 
-        text-align: center;
-      }
+      padding: 5px;
+      max-width: 98%;
+    }
+    .main {
+      max-width: 100%;
+    }
+    form {
+      width: 100%;
+      padding: 0 5px
+    }
+    .input-field {
+      width: 100%;
+      padding: 0 10px;
+      /* margin: 0; */
+    }
+
+    .submit-button {
+        margin: 0 5px 0 0;
+    }
+
+    .huvudbild {
+      width: 100%;
+    }
   }

@@ -1,10 +1,8 @@
 export const questions = [
     {
         id: 1,
-        pronounsSE: "Vilken",
-        pronounsEN: "Which",
-        categorySE: "politiker",
-        categoryEN: "politician",
+        pronouns: "Vilken",
+        category: "politiker",
         gif: "https://media.tenor.com/YSRFoU5qT64AAAAM/joseph-stalin-hats-off.gif",
         images: [
             "/images/stalin1.jpg",
