@@ -1,33 +1,34 @@
 button {
-    border-radius: 8px;
-    border: none;
-    padding: 10px;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
-    cursor: pointer;
-    transition: border-color 0.25s;
+  border-radius: 8px;
+  border: none;
+  padding: 10px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
 }
 
 .modal-button {
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .buttons {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .number-button {
-    background-color: lightblue;
-    margin: 2px;
-    width: 32px;
-    height: 32px;
-    padding: 0px;
-    
+  background-color: lightblue;
+  margin: 2px;
+  width: 32px;
+  height: 32px;
+  padding: 0px;
+
 }
+
 .number-button:hover,
 .number-button:focus,
 .number-button:focus-visible {
@@ -35,11 +36,11 @@ button {
 }
 
 .number-button2 {
-    background-color: lightsalmon;
-    margin: 2px;
-    width: 3rem;
-    height: 3rem;
-    padding: 0px;
+  background-color: lightblue;
+  margin: 2px;
+  width: 3rem;
+  height: 3rem;
+  padding: 0px;
 }
 
 .number-button2:hover,
@@ -49,11 +50,17 @@ button {
 }
 
 .submit-button {
-    padding: 0 16px;
-    height: 39px;
-    font-size: 14px;
-    display: flex;
-    border-radius: 0 5px 5px 0;
-    background-color: #1bb76e;
-    align-items: center;
+  padding: 0 12px;
+  height: 39px;
+  font-size: 14px;
+  display: flex;
+  border-radius: 0 5px 5px 0;
+  background-color: forestgreen;
+  align-items: center;
+  color: whitesmoke;
+}
+
+.submit-button:hover {
+  background-color: limegreen;
+  color: black;
 }
