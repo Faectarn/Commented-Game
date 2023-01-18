@@ -9,7 +9,10 @@ import { questionsState, selectedIndexState } from '../store/questions/atom';
 function Header() {
   return (
     <div className='header'>
-      <img src={logo} className="logo2" onClick={() => location.reload()}></img>
+      {/* <img src={logo} className="logo2" onClick={() => location.reload()}></img> */}
+      <div className='logo'  onClick={() => location.reload()}>
+        Commenterdle
+      </div>
       <div className='modal'>
         <Modals />
       </div>

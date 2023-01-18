@@ -11,7 +11,7 @@ function Content() {
     const [currentQuestion, setCurrentQuestion] = useState(questions[selectedIndex])
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0)
-   
+
     const [guess, setGuess] = useState('')
     const [guessCount, setGuessCount] = useState(0)
 
@@ -100,9 +100,11 @@ function Content() {
     return (
         <div className='main'>
             <h1>
-                {currentQuestion.pronouns} {currentQuestion.category} är det som kommenteras?
+                {currentQuestion.pronouns} {currentQuestion.category} är det som {currentQuestion.type}?
             </h1>
-            <div className='imagebox'>
+            <div className='imagebox' style={{
+                backgroundColor: `${currentQuestion.color}`,
+            }}>
                 <img src={currentQuestion.images[currentImageIndex]} alt="Current image" className="huvudbild" />
             </div>
             <div className='buttons'>
