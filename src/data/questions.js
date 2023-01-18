@@ -3,6 +3,8 @@ export const questions = [
         id: 1,
         pronouns: "Vilken",
         category: "politiker",
+        type: "kommenteras",
+        color: "#191919",
         gif: "https://media.tenor.com/YSRFoU5qT64AAAAM/joseph-stalin-hats-off.gif",
         images: [
             "/images/stalin1.jpg",
@@ -20,6 +22,8 @@ export const questions = [
         id: 2,
         pronouns: "Vilken",
         category: "kändis",
+        type: "kommenteras",
+        color: "#191919",
         gif: "https://media.tenor.com/sBtFfckawokAAAAM/princess-diana-hello.gif",
         images: [
             "/images/diana1.jpg",
@@ -40,6 +44,8 @@ export const questions = [
         id: 3,
         pronouns: "Vilken",
         category: "filmkaraktär",
+        type: "kommenteras",
+        color: "#191919",
         gif: "https://media.tenor.com/f51c1QDVcxUAAAAM/star-wars-leia.gif",
         images: [
             "/images/leia1.jpg",
@@ -60,6 +66,8 @@ export const questions = [
         id: 4,
         pronouns: "Vilken",
         category: "viral video",
+        type: "kommenteras",
+        color: "#191919",
         gif: "https://i.ytimg.com/vi/DD04Q8-e3kI/hqdefault.jpg",
         images: [
             "/images/40tusenmiljarder1.jpg",
@@ -80,6 +88,8 @@ export const questions = [
         id: 5,
         pronouns: "Vilket",
         category: "barnprogram",
+        type: "kommenteras",
+        color: "#191919",
         gif: "https://media.tenor.com/G1clF5f6h_IAAAAM/alfie-atkins-alfons%C3%A5berg.gif",
         images: [
             "/images/alfons1.jpg",
@@ -97,6 +107,8 @@ export const questions = [
         id: 6,
         pronouns: "Vilken",
         category: "bok",
+        type: "kommenteras",
+        color: "#191919",
         gif: "https://media.tenor.com/9oWzGxf0N84AAAAM/two-broke-girls-bible.gif",
         images: [
             "/images/bible1.jpg",
@@ -115,6 +127,8 @@ export const questions = [
         id: 7,
         pronouns: "Vilken",
         category: "dödad person",
+        type: "kommenteras",
+        color: "#191919",
         gif: "",
         images: [
             "/images/binladen1.jpg",
@@ -134,6 +148,8 @@ export const questions = [
         id: 8,
         pronouns: "Vilken",
         category: "viral video",
+        type: "kommenteras",
+        color: "#191919",
         gif: "https://media.tenor.com/vbqJqlRRnJQAAAAM/leave-her-alone-crying.gif",
         images: [
             "/images/britneyalone1.jpg",
@@ -153,6 +169,8 @@ export const questions = [
         id: 9,
         pronouns: "Vilken",
         category: "viral video",
+        type: "kommenteras",
+        color: "#191919",
         gif: "https://media.tenor.com/3CLUTyj-EjkAAAAM/tom-cruise-oprah.gif",
         images: [
             "/images/cruiseoprah1.jpg",
@@ -174,6 +192,8 @@ export const questions = [
         id: 10,
         pronouns: "Vilken",
         category: "fobi",
+        type: "kommenteras",
+        color: "#191919",
         gif: "https://media.tenor.com/zMPmq5AF1MsAAAAM/mr-bean-d3nt1st.gif",
         images: [
             "/images/dentist1.jpg",
@@ -192,6 +212,8 @@ export const questions = [
         id: 11,
         pronouns: "Vilken",
         category: "viral video",
+        type: "kommenteras",
+        color: "#191919",
         gif: "https://media.tenor.com/bXAKEBgc_D0AAAAM/do-it-what-are-you-waiting-for.gif",
         images: [
             "/images/doit1.jpg",
@@ -211,6 +233,8 @@ export const questions = [
         id: 12,
         pronouns: "Vilket",
         category: "djur",
+        type: "kommenteras",
+        color: "#191919",
         gif: "https://media.tenor.com/xW3QYN8HJ2wAAAAM/fiona-hippo.gif",
         images: [
             "/images/hippo1.jpg",
@@ -229,6 +253,8 @@ export const questions = [
         id: 13,
         pronouns: "Vilken",
         category: "filmscen",
+        type: "kommenteras",
+        color: "#191919",
         gif: "https://media.tenor.com/alpOB08F6M4AAAAM/cold-tired.gif",
         images: [
             "/images/jacktitanic1.jpg",
@@ -242,12 +268,18 @@ export const questions = [
             "jack i titanic dör",
             "jack titanic death",
             "Jack Titanic",
+            "Jack & Rose",
+            "Jack och Rose",
+            "Jack and Rose",
+            "Titanic Ending",
         ],
     },
     {
         id: 14,
         pronouns: "Vilken",
         category: "TV-spelskaraktär",
+        type: "kommenteras",
+        color: "#191919",
         gif: "https://media.tenor.com/vZPqW9KdENUAAAAM/teteshrek-mario.gif",
         images: [
             "/images/luigi1.jpg",
@@ -265,6 +297,8 @@ export const questions = [
         id: 15,
         pronouns: "Vilken",
         category: "känd person",
+        type: "kommenteras",
+        color: "#191919",
         gif: "https://media.tenor.com/tNQXG57YITcAAAAM/nelson-mandela.gif",
         images: [
             "/images/mandela1.jpg",
@@ -282,6 +316,8 @@ export const questions = [
         id: 16,
         pronouns: "Vilken",
         category: "händelse",
+        type: "kommenteras",
+        color: "#191919",
         gif: "https://media.tenor.com/MXSeMC3lXF4AAAAM/twin-towers-south-tower.gif",
         images: [
             "/images/nineeleven1.jpg",
@@ -300,6 +336,8 @@ export const questions = [
         id: 17,
         pronouns: "Vilken",
         category: "Disney-låt",
+        type: "kommenteras",
+        color: "#191919",
         gif: "https://media.tenor.com/oxvwgtLoHfcAAAAM/the-jungle-book-disney.gif",
         images: [
             "/images/nöjdsomlivetger1.jpg",
@@ -324,6 +362,8 @@ export const questions = [
         id: 18,
         pronouns: "Vilket",
         category: "uppmärksammat brottsfall",
+        type: "kommenteras",
+        color: "#191919",
         gif: "https://media.tenor.com/6ujfExWdBVMAAAAM/oj-simpson.gif",
         images: [
             "/images/ojsimpson1.jpg",
@@ -341,6 +381,8 @@ export const questions = [
         id: 19,
         pronouns: "Vilken",
         category: "låt",
+        type: "kommenteras",
+        color: "#191919",
         gif: "https://media.tenor.com/IAWKXaW_52sAAAAM/rickroll.gif",
         images: [
             "/images/rickastley1.jpg",
@@ -360,6 +402,8 @@ export const questions = [
         id: 20,
         pronouns: "Vilken",
         category: "viral video",
+        type: "kommenteras",
+        color: "#191919",
         gif: "https://media.tenor.com/yZFT368MiO4AAAAM/skogsturken-vem-vare.gif",
         images: [
             "/images/skogsturken1.jpg",
@@ -378,6 +422,8 @@ export const questions = [
         id: 21,
         pronouns: "Vilken",
         category: "byggnad",
+        type: "kommenteras",
+        color: "#191919",
         gif: "https://media.tenor.com/JvLh_Gs0qUwAAAAM/matematica-rio-professor.gif",
         images: [
             "/images/tajmahal1.jpg",
@@ -394,6 +440,8 @@ export const questions = [
         id: 22,
         pronouns: "Vilken",
         category: "musikvideo",
+        type: "kommenteras",
+        color: "#191919",
         gif: "https://media.tenor.com/NfvDWkLlWrUAAAAM/toxic-music-video-britney-spears.gif",
         images: [
             "/images/toxic1.jpg",
@@ -412,6 +460,8 @@ export const questions = [
         id: 23,
         pronouns: "Vilket",
         category: "uppmärksammat brottsfall",
+        type: "kommenteras",
+        color: "#191919",
         gif: "https://media.tenor.com/mOiigyWpGT8AAAAM/richard-nixon-republican.gif",
         images: [
             "/images/watergate1.jpg",
@@ -429,6 +479,8 @@ export const questions = [
         id: 24,
         pronouns: "Vilket",
         category: "sport-ögonblick",
+        type: "kommenteras",
+        color: "#191919",
         gif: "https://media3.giphy.com/media/PDmXIQru17Udy/200.webp?cid=ecf05e47ecbp288tv1vzb3faqwfsei0o2fb18ytu3xqzwoub&rid=200.webp&ct=g",
         images: [
             "/images/zidane1.jpg",
@@ -446,6 +498,8 @@ export const questions = [
         id: 25,
         pronouns: "Vilken",
         category: "seriemördare",
+        type: "kommenteras",
+        color: "#191919",
         gif: "https://media.tenor.com/0uDR4kOpFnAAAAAM/office-gunshow.gif",
         images: [
             "/images/zodiac1.jpg",
@@ -458,6 +512,26 @@ export const questions = [
             "The Zodiac Killer",
             "Zodiac Killer",
             "Zodiac"
+        ],
+    },
+    {
+        id: 26,
+        pronouns: "Vilken",
+        category: "film",
+        type: "recenseras",
+        color: "#14171c",
+        gif: "https://media.tenor.com/l9YjrqYPo4YAAAAM/the-lion-king-simba.gif",
+        images: [
+            "/images/lionking1.jpg",
+            "/images/lionking2.jpg",
+            "/images/lionking3.jpg",
+            "/images/lionking4.jpg",
+            "/images/lionking5.jpg",
+        ],
+        correctAnswer: [
+            "Lejonkungen",
+            "The Lion King",
+            "Lion King",
         ],
     },
 ]
