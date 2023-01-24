@@ -1,3 +1,5 @@
+import { hints } from './hints';
+
 export const questions = [
     {
         id: 1,
@@ -16,7 +18,9 @@ export const questions = [
         correctAnswer: [
             "Josef Stalin",
             "Stalin",
-        ]
+        ],
+        options: hints.politician
+        
     },
     {
         id: 2,
@@ -37,8 +41,9 @@ export const questions = [
             "Princess Diana",
             "Diana",
             "Diana Frances",
-            "Daina Spencer",
-        ]
+            "Diana Spencer",
+        ],
+        options: hints.celebrity
     },
     {
         id: 3,
@@ -58,9 +63,8 @@ export const questions = [
             "Prinsessan Leia",
             "Leia",
             "Princess Leia",
-            "Diana Frances",
-            "Daina Spencer",
-        ]
+        ],
+        options: hints.character
     },
     {
         id: 4,
@@ -82,7 +86,8 @@ export const questions = [
             "40000 miljarder kronor",
             "40 tusen miljarder",
             "40 tusen miljarder kronor",
-        ]
+        ],
+        options: hints.viralVideo
     },
     {
         id: 5,
@@ -101,7 +106,8 @@ export const questions = [
         correctAnswer: [
             "Alfons Åberg",
             "Alfons",
-        ]
+        ],
+        options: hints.kidsShow
     },
     {
         id: 6,
@@ -121,7 +127,8 @@ export const questions = [
             "Bibeln",
             "The Bible",
             "Bible",
-        ]
+        ],
+        options: hints.book
     },
     {
         id: 7,
@@ -142,7 +149,8 @@ export const questions = [
             "Osama bin Laden",
             "Bin Laden",
             "Bin Ladin"
-        ]
+        ],
+        options: hints.killed
     },
     {
         id: 8,
@@ -163,7 +171,8 @@ export const questions = [
             "Leave Britney Alone",
             "Leave Britney",
             "Britney Alone"
-        ]
+        ],
+        options: hints.viralVideo
     },
     {
         id: 9,
@@ -186,7 +195,9 @@ export const questions = [
             "Tom Cruise Couch Oprah",
             "Tom Cruise Jumpes",
             "Tom Cruise Couch",
+            "Oprah, Tom Cruise"
         ],
+        options: hints.viralVideo
     },
     {
         id: 10,
@@ -206,7 +217,9 @@ export const questions = [
             "Tandläkarskräck",
             "Tandläkare",
             "Dentists",
+            "Odontofobi",
         ],
+        options: hints.phobia
     },
     {
         id: 11,
@@ -228,6 +241,7 @@ export const questions = [
             "Shia LaBeouf Just Do It",
             "Just Do It Shia LaBeouf",
         ],
+        options: hints.viralVideo
     },
     {
         id: 12,
@@ -248,11 +262,12 @@ export const questions = [
             "Hippo",
             "Hippopotamus",
         ],
+        options: hints.animal
     },
     {
         id: 13,
         pronouns: "Vilken",
-        category: "filmscen",
+        category: "films filmscen",
         type: "kommenteras",
         color: "#191919",
         gif: "https://media.tenor.com/alpOB08F6M4AAAAM/cold-tired.gif",
@@ -264,15 +279,9 @@ export const questions = [
             "/images/jacktitanic5.jpg",
         ],
         correctAnswer: [
-            "Jack dör i Titanic",
-            "jack i titanic dör",
-            "jack titanic death",
-            "Jack Titanic",
-            "Jack & Rose",
-            "Jack och Rose",
-            "Jack and Rose",
-            "Titanic Ending",
+            "Titanic",
         ],
+        options: hints.movie
     },
     {
         id: 14,
@@ -292,6 +301,7 @@ export const questions = [
             "Luigi",
             "Luigi Mario",
         ],
+        options: hints.gameCharacter
     },
     {
         id: 15,
@@ -311,6 +321,7 @@ export const questions = [
             "Nelson Mandela",
             "Mandela",
         ],
+        options: hints.celebrity
     },
     {
         id: 16,
@@ -331,6 +342,7 @@ export const questions = [
             "nine eleven",
             "Elfte september",
         ],
+        options: hints.event
     },
     {
         id: 17,
@@ -357,6 +369,7 @@ export const questions = [
             "Allt som livet ger",
             "Djungelboken",
         ],
+        options: hints.disneySong
     },
     {
         id: 18,
@@ -373,14 +386,17 @@ export const questions = [
             "/images/ojsimpson5.jpg",
         ],
         correctAnswer: [
+            "Mordrättegången mot OJ Simpson",
+            "OJ Simpson rättegången",
             "OJ Simpson",
             "OJ",
         ],
+        options: hints.crime
     },
     {
         id: 19,
         pronouns: "Vilken",
-        category: "låt",
+        category: "musikvideo",
         type: "kommenteras",
         color: "#191919",
         gif: "https://media.tenor.com/IAWKXaW_52sAAAAM/rickroll.gif",
@@ -397,6 +413,7 @@ export const questions = [
             "Never Gonna Give You Up",
             "Rick Astley",
         ],
+        options: hints.musicvideo
     },
     {
         id: 20,
@@ -417,6 +434,7 @@ export const questions = [
             "Vem var det som kasta?",
             "Skogsturken",
         ],
+        options: hints.viralVideo
     },
     {
         id: 21,
@@ -435,6 +453,7 @@ export const questions = [
         correctAnswer: [
             "Taj Mahal",
         ],
+        options: hints.building
     },
     {
         id: 22,
@@ -455,6 +474,7 @@ export const questions = [
             "Toxic - Britney Spears",
             "Toxic"
         ],
+        options: hints.musicvideo
     },
     {
         id: 23,
@@ -474,6 +494,7 @@ export const questions = [
             "Watergate-skandalen",
             "Watergate",
         ],
+        options: hints.crime
     },
     {
         id: 24,
@@ -490,9 +511,10 @@ export const questions = [
             "/images/zidane5.jpg",
         ],
         correctAnswer: [
-            "Zidane knockar Materazzi i VM-finalen 2006",
+            "Zinedine Zidane knockar Materazzi i VM-finalen 2006",
             "Zidane knockar Materazzi",
         ],
+        options: hints.sport
     },
     {
         id: 25,
@@ -509,23 +531,25 @@ export const questions = [
             "/images/zodiac5.jpg",
         ],
         correctAnswer: [
+            "Zodiac-mördaren",
             "The Zodiac Killer",
             "Zodiac Killer",
             "Zodiac"
         ],
+        options: hints.serialkiller
     },
     {
         id: 26,
         pronouns: "Vilken",
         category: "film",
         type: "recenseras",
-        color: "#14171c",
+        color: "#181b20",
         gif: "https://media.tenor.com/l9YjrqYPo4YAAAAM/the-lion-king-simba.gif",
         images: [
-            "/images/lionking1.jpg",
+            "/images/lionking1.png",
             "/images/lionking2.jpg",
-            "/images/lionking3.jpg",
-            "/images/lionking4.jpg",
+            "/images/lionking3.png",
+            "/images/lionking4.png",
             "/images/lionking5.jpg",
         ],
         correctAnswer: [
@@ -533,5 +557,66 @@ export const questions = [
             "The Lion King",
             "Lion King",
         ],
+        options: hints.movie
+    },
+    {
+        id: 27,
+        pronouns: "Vilken",
+        category: "film",
+        type: "recenseras",
+        color: "#14171c",
+        gif: "https://media.tenor.com/AAMlkVnDjXgAAAAM/its-groundhog-day-again-reporting.gif",
+        images: [
+            "/images/groundhog1.jpg",
+            "/images/groundhog2.jpg",
+            "/images/groundhog3.jpg",
+            "/images/groundhog4.jpg",
+            "/images/groundhog5.jpg",
+        ],
+        correctAnswer: [
+            "Måndag Hela Veckan",
+            "Groundhog Day",
+        ],
+        options: hints.movie
+    },
+    {
+        id: 28,
+        pronouns: "Vilken",
+        category: "film",
+        type: "recenseras",
+        color: "#14171c",
+        gif: "https://media.tenor.com/82rzvAm6G68AAAAM/ratatouille.gif",
+        images: [
+            "/images/rat1.jpg",
+            "/images/rat2.jpg",
+            "/images/rat3.jpg",
+            "/images/rat4.jpg",
+            "/images/rat5.jpg",
+        ],
+        correctAnswer: [
+            "Ratatouille",
+            "Råttatouille",
+        ],
+        options: hints.movie
+    },
+    {
+        id: 29,
+        pronouns: "Vilken",
+        category: "film",
+        type: "recenseras",
+        color: "#14171c",
+        gif: "http://i.imgur.com/1iPcGK2.gif",
+        images: [
+            "/images/sune1.jpg",
+            "/images/sune2.jpg",
+            "/images/sune3.jpg",
+            "/images/sune4.jpg",
+            "/images/sune5.jpg",
+        ],
+        correctAnswer: [
+            "Sunes Sommar",
+            "Sune",
+        ],
+        options: hints.movie
     },
 ]
