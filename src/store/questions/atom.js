@@ -10,8 +10,3 @@ export const questionsState = atom({
   key: "questionsState",
   default: questions,
 })
-
-export const languageState = atom({
-  key: "languageState",
-  default: 'sv',
-})
