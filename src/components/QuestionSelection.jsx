@@ -1,6 +1,6 @@
 import React from 'react'
 import { useRecoilState, useRecoilValue } from "recoil";
-import { questionsState, selectedIndexState,  } from '../store/questions/atom';
+import { questionsState, selectedIndexState, } from '../store/questions/atom';
 
 function QuestionSelection() {
     const questions = useRecoilValue(questionsState)

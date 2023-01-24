@@ -58,8 +58,7 @@ function InfoModal() {
         <div>
           <h2>Instruktioner</h2>
           <h4>Använd bilden som visas för att gissa vad som kommenteras/recenseras</h4>
-          <h4>Om du gissar fel avslöjas en ny bild</h4>
-          <h4>Lämna inmatningen tom och tryck på Nästa för att hoppa till nästa bild</h4>
+          <h4>Om du gissar fel eller lämnar inmatningen tom visas nästa bild</h4>
         </div>
       </Modal>
     </div>

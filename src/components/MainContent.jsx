@@ -2,10 +2,11 @@ import React, { useEffect, useState } from 'react'
 import { useRecoilValue } from "recoil";
 import { questionsState, selectedIndexState, } from '../store/questions/atom';
 
-function Content() {
+function MainContent() {
     const questions = useRecoilValue(questionsState)
     const selectedIndex = useRecoilValue(selectedIndexState);
-
+    const [input, setInput] = useState("");
+    const [matchingHints, setMatchingHints] = useState([]);
     const [active, setActive] = useState(true)
 
     const [currentQuestion, setCurrentQuestion] = useState(questions[selectedIndex])
@@ -18,8 +19,6 @@ function Content() {
     const [numberOfButtons, setNumberOfButtons] = useState(1)
 
     const [gif, setGif] = useState("")
-
-    const [score, setScore] = useState(10)
 
     const currentCorrectAnswer = currentQuestion.correctAnswer
     const numberOfImages = currentQuestion.images.length
@@ -43,7 +42,7 @@ function Content() {
         }
     }, [guessCount, active])
 
-    // function to fetch a new image and set the correct answer
+
     const getNewImage = () => {
         if (currentImageIndex + 1 < numberOfImages) {
             setCurrentImageIndex(currentImageIndex + 1)
@@ -55,7 +54,6 @@ function Content() {
         }
     }
 
-    // function to check if the guess is correct
     const isCorrectAnswer = (guess) => {
         return currentCorrectAnswer.find((answer) => answer.toLowerCase() === guess.toLowerCase()) !== undefined
     }
@@ -68,25 +66,40 @@ function Content() {
         } else {
             return `${guessesLeft} gissningar kvar`
         }
-
     }
 
-    // function to handle form submission
     const handleSubmit = (e) => {
         e.preventDefault()
+        setInput("")
+        setMatchingHints([])
         if (isCorrectAnswer(guess)) {
             setFeedback(`Snyggt! Du hade rätt på gissning ${currentImageIndex + 1}`)
             setGif(currentQuestion.gif)
             setActive(false)
-            // setScore(score + 1) // increase score by 1
         } else if (!isCorrectAnswer(guess) || "") {
             setFeedback(feedbackCount())
             getNewImage()
-
-            // setScore(score - 2)
+            setGuess("")
         }
-        setGuess("")
     }
+
+    const handleInput = (e) => {
+        setInput(e.target.value)
+        setGuess(e.target.value)
+        if (e.target.value.length < 2) {
+            setMatchingHints([])
+        } else setMatchingHints(
+            currentQuestion.options
+                .filter((title) => title.toLowerCase().includes(e.target.value.toLowerCase()))
+                .sort()
+        );
+    };
+
+    const handleClick = (guess) => {
+        setInput(guess);
+        setMatchingHints([]);
+        setGuess(guess)
+    };
 
     const buttons = []
     for (let i = 1; i <= (numberOfButtons); i++) {
@@ -110,23 +123,29 @@ function Content() {
             <div className='buttons'>
                 {buttons}
             </div>
-
             <form onSubmit={handleSubmit}>
                 <input className="input-field"
                     type="text"
                     id="guess"
                     placeholder="Ange ditt svar"
-                    value={guess}
-                    onChange={(e) => setGuess(e.target.value)}
+                    autoComplete='off'
+                    value={input}
+                    onChange={handleInput}
                 />
                 <button className="submit-button" type="submit" disabled={!active}>NÄSTA</button>
+
             </form>
+            <ul>
+                {matchingHints.map((e) => (
+                    <li key={e} onClick={() => handleClick(e)}>
+                        {e}
+                    </li>
+                ))}
+            </ul>
             <h3>{feedback}</h3>
             <img className="gif" src={gif} />
-
-            {/* <p>Score: {score}</p> */}
         </div>
     )
 }
 
-export default Content
+export default MainContent
