@@ -1,17 +1,19 @@
 body {
   margin: 0;
   display: flex;
-  /* place-items: center; */
-  /* min-width: 320px; */
   min-height: 100vh;
   background-color: whitesmoke;
   font-family: 'Inter', sans-serif;
   -webkit-text-size-adjust: 100%;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 #root {
   margin: 0 auto;
-  padding: 1rem 10rem; 
+  padding: 1rem 10rem;
   text-align: center;
   font-weight: 400;
 }
@@ -27,6 +29,10 @@ body {
   align-items: center;
 }
 
+.huvudbild {
+  width: 30rem;
+}
+
 form {
   margin-top: 1rem;
   width: 30rem;
@@ -40,11 +46,30 @@ form {
   width: 25rem;
   padding: 0 10px;
   border: none;
-  border-radius: 5px 0px 0px 5px;
+  border-radius: 5px 0px 0px 0;
 }
 
-.huvudbild {
-  width: 30rem;
+ul {
+  background-color: white;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 14px;
+  padding: 0 10px 0 0;
+  margin: 0;
+  width: 25rem;
+  border-radius: 0 0px 5px 5px;
+}
+
+li {
+  width: 100%;
+  text-align: start;
+  padding: 8px;
+}
+
+li:hover {
+  background-color: Gainsboro;
 }
 
 .footer {
