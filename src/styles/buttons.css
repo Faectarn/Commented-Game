@@ -14,6 +14,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 0 0 14px;
 }
 
 .buttons {
@@ -62,4 +63,14 @@ button {
 
 .submit-button:hover {
   background-color: green;
+}
+
+.close {
+  background-color: transparent;
+  margin: 0;
+  padding: 3px;
+  position: absolute;
+  cursor: pointer;
+  top: 8px;
+  right: 8px;
 }
