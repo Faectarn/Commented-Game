@@ -7,7 +7,7 @@ export const questions = [
         category: "uppmärksammat brottsfall",
         type: "kommenteras",
         color: "#191919",
-        gif: "https://media.tenor.com/6ujfExWdBVMAAAAM/oj-simpson.gif",
+        gif: "/images/ojsimpson.gif",
         images: [
             "/images/ojsimpson1.jpg",
             "/images/ojsimpson2.jpg",
@@ -27,7 +27,7 @@ export const questions = [
         category: "händelse",
         type: "kommenteras",
         color: "#191919",
-        gif: "https://media.tenor.com/MXSeMC3lXF4AAAAM/twin-towers-south-tower.gif",
+        gif: "/images/nineeleven.gif",
         images: [
             "/images/nineeleven1.jpg",
             "/images/nineeleven2.jpg",
@@ -50,7 +50,7 @@ export const questions = [
         category: "känd person",
         type: "kommenteras",
         color: "#191919",
-        gif: "https://media.tenor.com/tNQXG57YITcAAAAM/nelson-mandela.gif",
+        gif: "/images/mandela.gif",
         images: [
             "/images/mandela1.jpg",
             "/images/mandela2.jpg",
@@ -69,7 +69,7 @@ export const questions = [
         category: "film",
         type: "recenseras",
         color: "#181b20",
-        gif: "https://media.tenor.com/l9YjrqYPo4YAAAAM/the-lion-king-simba.gif",
+        gif: "/images/lionking.gif",
         images: [
             "/images/lionking1.png",
             "/images/lionking2.png",
@@ -90,7 +90,7 @@ export const questions = [
         category: "viral video",
         type: "kommenteras",
         color: "#191919",
-        gif: "https://media.tenor.com/vbqJqlRRnJQAAAAM/leave-her-alone-crying.gif",
+        gif: "/images/britneyalone.gif",
         images: [
             "/images/britneyalone1.jpg",
             "/images/britneyalone2.jpg",
@@ -574,7 +574,7 @@ export const questions = [
         category: "film",
         type: "recenseras",
         color: "#181b20",
-        gif: "http://i.imgur.com/1iPcGK2.gif",
+        gif: "/images/sune.gif",
         images: [
             "/images/sune1.png",
             "/images/sune2.png",
