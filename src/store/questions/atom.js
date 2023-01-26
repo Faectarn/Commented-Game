@@ -1,4 +1,4 @@
-import { atom } from "recoil";
+import { atom } from "recoil"
 import { questions } from '../../data/questions'
 
 export const selectedIndexState = atom({

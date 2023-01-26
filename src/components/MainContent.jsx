@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import { useRecoilValue } from "recoil";
-import { questionsState, selectedIndexState, } from '../store/questions/atom';
+import { useRecoilValue } from "recoil"
+import { questionsState, selectedIndexState, } from '../store/questions/atom'
 
 function MainContent() {
     const questions = useRecoilValue(questionsState)
-    const selectedIndex = useRecoilValue(selectedIndexState);
-    const [input, setInput] = useState("");
-    const [matchingHints, setMatchingHints] = useState([]);
+    const selectedIndex = useRecoilValue(selectedIndexState)
+    const [input, setInput] = useState("")
+    const [matchingHints, setMatchingHints] = useState([])
     const [active, setActive] = useState(true)
 
     const [currentQuestion, setCurrentQuestion] = useState(questions[selectedIndex])
@@ -22,13 +22,14 @@ function MainContent() {
 
     const currentCorrectAnswer = currentQuestion.correctAnswer
     const numberOfImages = currentQuestion.images.length
+    const gameRound = currentImageIndex + 1
 
     const [feedback, setFeedback] = useState("")
 
     useEffect(() => {
         setCurrentQuestion(questions[selectedIndex])
         setCurrentImageIndex(0)
-        setFeedback(`Lycka till! Du har ${currentQuestion.images.length} gissningar på dig att hitta rätt svar`)
+        setFeedback(`Lycka till! Du har ${questions[selectedIndex].images.length} gissningar på dig att hitta rätt svar`)
         setGif("")
         setActive(true)
         setGuessCount(0)
@@ -44,8 +45,8 @@ function MainContent() {
 
 
     const getNewImage = () => {
-        if (currentImageIndex + 1 < numberOfImages) {
-            setCurrentImageIndex(currentImageIndex + 1)
+        if (gameRound < numberOfImages) {
+            setCurrentImageIndex(gameRound)
             setGuessCount(guessCount + 1)
         } else {
             setActive(false)
@@ -68,12 +69,36 @@ function MainContent() {
         }
     }
 
+    const adjectives = [
+        'Snyggt', 'Najs', 'Inte illa', 'Bra där', 'Bra jobbat', 'Såja', 'Härligt',
+    ]
+
+    const numeral = [
+        'första', 'andra', 'tredje', 'fjärde', 'femte', 'sjätte', 'sjunde', 'åttonde', 'nionde', 'tionde',
+    ]
+
+    const emojies = [
+        '👍', '👌', '😀', '🙂', '😁', '😊', '🤩', '😎',
+    ]
+
+    const randomAdjective = adjectives[Math.floor(Math.random() * adjectives.length)]
+
+    const randomEmoji = emojies[Math.floor(Math.random() * emojies.length)]
+
+    const winFeedback = () => {
+        if (guessesLeft === 0) {
+            setFeedback(`Nära ögat! Du hade rätt på den sista gissningen 😅`)
+        } else {
+            setFeedback(`${randomAdjective}! Du hade rätt på ${numeral[currentImageIndex]} gissningen ${randomEmoji}`)
+        }
+    }
+
     const handleSubmit = (e) => {
         e.preventDefault()
         setInput("")
         setMatchingHints([])
         if (isCorrectAnswer(guess)) {
-            setFeedback(`Snyggt! Du hade rätt på gissning ${currentImageIndex + 1}`)
+            winFeedback()
             setGif(currentQuestion.gif)
             setActive(false)
         } else if (!isCorrectAnswer(guess) || "") {
@@ -92,14 +117,14 @@ function MainContent() {
             currentQuestion.options
                 .filter((title) => title.toLowerCase().includes(e.target.value.toLowerCase()))
                 .sort()
-        );
-    };
+        )
+    }
 
     const handleClick = (guess) => {
-        setInput(guess);
-        setMatchingHints([]);
+        setInput(guess)
+        setMatchingHints([])
         setGuess(guess)
-    };
+    }
 
     const buttons = []
     for (let i = 1; i <= (numberOfButtons); i++) {
@@ -132,7 +157,7 @@ function MainContent() {
                     value={input}
                     onChange={handleInput}
                 />
-                <button className="submit-button" type="submit" disabled={!active}>NÄSTA</button>
+                <button className="submit-button" type="submit" disabled={!active}>{input.length > 0 ? 'SVARA' : 'NÄSTA'}</button>
 
             </form>
             <ul>

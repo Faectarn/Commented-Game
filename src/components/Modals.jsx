@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Modal from "react-modal";
+import Modal from "react-modal"
 import QuestionSelection from "./QuestionSelection"
 
 const info = <img src="https://cdn-icons-png.flaticon.com/512/84/84264.png" width="25"></img>
@@ -17,44 +17,41 @@ const customStyles = {
     width: 300,
   },
 
-};
+}
 
 function ButtonModal() {
-  const [modalOpen, setModalOpen] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false)
   return (
     <div>
-      <button onClick={setModalOpen} className="modal-button">{list}</button>
+      <button onClick={() => setModalOpen(!modalOpen)} className="modal-button">{list}</button>
       <Modal
         isOpen={modalOpen}
         onRequestClose={() => setModalOpen(false)}
+        ariaHideApp={false}
         style={customStyles}
       >
+        <button onClick={() => setModalOpen(false)} className="close">{close}</button>
         <h2>Välj en fråga</h2>
         <QuestionSelection />
       </Modal>
     </div>
   )
 }
+const close = <img src="https://cdn-icons-png.flaticon.com/512/458/458595.png" width="15"></img>
+
 
 function InfoModal() {
-
-  const [modalOpen, setModalOpen] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false)
   return (
     <div>
-      <button onClick={setModalOpen} className="modal-button">{info}</button>
-      <Modal className=""
+      <button onClick={() => setModalOpen(!modalOpen)} className="modal-button">{info}</button>
+      <Modal
         isOpen={modalOpen}
         onRequestClose={() => setModalOpen(false)}
+        ariaHideApp={false}
         style={customStyles}
       >
-        {/* <button onClick={() => setModalOpen(false)}>X</button> */}
-
-        {/* <div>
-          <h2>Instructions</h2>
-          <h3>Use the image provided to guess what is being commented/reviewed.</h3>
-          <h3>If you get a guess wrong a new image from the comments is revealed.</h3>
-          <h3>Leave the input blank and press Submit to skip to the next image</h3>
-        </div> */}
+        <button onClick={() => setModalOpen(false)} className="close">{close}</button>
         <div>
           <h2>Instruktioner</h2>
           <h4>Använd bilden som visas för att gissa vad som kommenteras/recenseras</h4>
