@@ -22,7 +22,7 @@ function MainContent() {
 
     const currentCorrectAnswer = currentQuestion.correctAnswer
     const numberOfImages = currentQuestion.images.length
-    const gameRound = currentImageIndex + 1
+    const gameRound = guessCount + 1
 
     const [feedback, setFeedback] = useState("")
 
@@ -39,15 +39,15 @@ function MainContent() {
         if (!active) {
             setNumberOfButtons(numberOfImages)
         } else {
-            setNumberOfButtons(guessCount + 1)
+            setNumberOfButtons(gameRound)
         }
     }, [guessCount, active])
 
 
     const getNewImage = () => {
         if (gameRound < numberOfImages) {
-            setCurrentImageIndex(gameRound)
             setGuessCount(guessCount + 1)
+            setCurrentImageIndex(gameRound)
         } else {
             setActive(false)
             setFeedback('Synd! Det rätta svaret var ' + [currentCorrectAnswer[0]])
@@ -59,7 +59,7 @@ function MainContent() {
         return currentCorrectAnswer.find((answer) => answer.toLowerCase() === guess.toLowerCase()) !== undefined
     }
 
-    const guessesLeft = numberOfImages - currentImageIndex - 1
+    const guessesLeft = numberOfImages - guessCount - 1
 
     const feedbackCount = () => {
         if ((guessesLeft) === 1) {
@@ -134,6 +134,9 @@ function MainContent() {
             </button>
         )
     }
+
+        console.log(currentImageIndex)
+console.log(guessCount)
 
     return (
         <div className='main'>
