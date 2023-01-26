@@ -27,13 +27,14 @@ button {
   width: 32px;
   height: 32px;
   padding: 0px;
-
 }
 
-.number-button:hover,
-.number-button:focus,
-.number-button:focus-visible {
+.number-button:hover {
   outline: 4px auto;
+}
+
+.number-button:focus {
+  background-color: CornflowerBlue;
 }
 
 .number-button2 {
@@ -63,6 +64,12 @@ button {
 
 .submit-button:hover {
   background-color: green;
+}
+
+.submit-button:disabled,
+.submit-button[disabled]{
+  background-color: #cccccc;
+  color: #666666;
 }
 
 .close {
