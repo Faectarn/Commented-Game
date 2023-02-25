@@ -135,8 +135,8 @@ function MainContent() {
         )
     }
 
-        console.log(currentImageIndex)
-console.log(guessCount)
+    console.log(currentImageIndex)
+    console.log(guessCount)
 
     return (
         <div className='main'>
