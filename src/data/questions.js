@@ -2,7 +2,6 @@ import { hints } from './hints';
 
 export const questions = [
     {
-        id: 1,
         pronouns: "Vilket",
         category: "uppmärksammat brottsfall",
         type: "kommenteras",
@@ -22,7 +21,6 @@ export const questions = [
         options: hints.crime
     },
     {
-        id: 2,
         pronouns: "Vilken",
         category: "händelse",
         type: "kommenteras",
@@ -45,7 +43,24 @@ export const questions = [
         options: hints.event
     },
     {
-        id: 3,
+        pronouns: "Vilken",
+        category: "film",
+        type: "recenseras",
+        color: "#181b20",
+        gif: "https://media1.giphy.com/media/NgiovDfHSyD0Q/200w.webp?cid=ecf05e478qam8p7mnw608tdgx9jy0jfmyv1s51z2gwtw666r&rid=200w.webp&ct=g",
+        images: [
+            "/images/schindler1.png",
+            "/images/schindler2.png",
+            "/images/schindler3.png",
+            "/images/schindler4.png",
+            "/images/schindler5.png",
+        ],
+        correctAnswer: [
+            "Schindler's List",
+        ],
+        options: hints.movie
+    },
+    {
         pronouns: "Vilken",
         category: "känd person",
         type: "kommenteras",
@@ -64,7 +79,25 @@ export const questions = [
         options: hints.celebrity
     },
     {
-        id: 4,
+        pronouns: "Vilken",
+        category: "film",
+        type: "recenseras",
+        color: "#181b20",
+        gif: "https://media.tenor.com/TT13lNfKbVQAAAAC/hobbit-frodo.gif",
+        images: [
+            "/images/hobbit1.png",
+            "/images/hobbit2.png",
+            "/images/hobbit3.png",
+            "/images/hobbit4.png",
+            "/images/hobbit5.png",
+        ],
+        correctAnswer: [
+            "The Hobbit",
+            "Bilbo",
+        ],
+        options: hints.movie
+    },
+    {
         pronouns: "Vilken",
         category: "film",
         type: "recenseras",
@@ -85,7 +118,6 @@ export const questions = [
         options: hints.movie
     },
     {
-        id: 5,
         pronouns: "Vilken",
         category: "viral video",
         type: "kommenteras",
@@ -104,7 +136,6 @@ export const questions = [
         options: hints.viralVideo
     },
     {
-        id: 6,
         pronouns: "Vilket",
         category: "sport-ögonblick",
         type: "kommenteras",
@@ -124,7 +155,6 @@ export const questions = [
         options: hints.sport
     },
     {
-        id: 7,
         pronouns: "Vilken",
         category: "Disney-låt",
         type: "kommenteras",
@@ -148,7 +178,6 @@ export const questions = [
         options: hints.disneySong
     },
     {
-        id: 8,
         pronouns: "Vilken",
         category: "bok",
         type: "kommenteras",
@@ -167,7 +196,6 @@ export const questions = [
         options: hints.book
     },
     {
-        id: 9,
         pronouns: "Vilken",
         category: "film",
         type: "recenseras",
@@ -187,7 +215,6 @@ export const questions = [
         options: hints.movie
     },
     {
-        id: 10,
         pronouns: "Vilken",
         category: "film",
         type: "recenseras",
@@ -208,7 +235,6 @@ export const questions = [
         options: hints.movie
     },
     {
-        id: 11,
         pronouns: "Vilken",
         category: "viral video",
         type: "kommenteras",
@@ -228,7 +254,6 @@ export const questions = [
         options: hints.viralVideo
     },
     {
-        id: 12,
         pronouns: "Vilken",
         category: "film",
         type: "recenseras",
@@ -249,7 +274,6 @@ export const questions = [
         options: hints.movie
     },
     {
-        id: 13,
         pronouns: "Vilket",
         category: "barnprogram",
         type: "kommenteras",
@@ -268,7 +292,6 @@ export const questions = [
         options: hints.kidsShow
     },
     {
-        id: 14,
         pronouns: "Vilken",
         category: "musikvideo",
         type: "kommenteras",
@@ -287,7 +310,6 @@ export const questions = [
         options: hints.musicvideo
     },
     {
-        id: 15,
         pronouns: "Vilken",
         category: "byggnad",
         type: "kommenteras",
@@ -306,7 +328,6 @@ export const questions = [
         options: hints.building
     },
     {
-        id: 16,
         pronouns: "Vilken",
         category: "viral video",
         type: "kommenteras",
@@ -328,7 +349,6 @@ export const questions = [
         options: hints.viralVideo
     },
     {
-        id: 17,
         pronouns: "Vilken",
         category: "dödad person",
         type: "kommenteras",
@@ -348,7 +368,6 @@ export const questions = [
         options: hints.killed
     },
     {
-        id: 18,
         pronouns: "Vilken",
         category: "seriemördare",
         type: "kommenteras",
@@ -370,7 +389,6 @@ export const questions = [
         options: hints.serialkiller
     },
     {
-        id: 19,
         pronouns: "Vilken",
         category: "TV-spelskaraktär",
         type: "kommenteras",
@@ -390,7 +408,6 @@ export const questions = [
         options: hints.gameCharacter
     },
     {
-        id: 20,
         pronouns: "Vilken",
         category: "film",
         type: "recenseras",
@@ -411,7 +428,6 @@ export const questions = [
         options: hints.movie
     },
     {
-        id: 21,
         pronouns: "Vilken",
         category: "kändis",
         type: "kommenteras",
@@ -430,7 +446,6 @@ export const questions = [
         options: hints.celebrity
     },
     {
-        id: 22,
         pronouns: "Vilken",
         category: "film",
         type: "recenseras",
@@ -450,7 +465,6 @@ export const questions = [
         options: hints.movie
     },
     {
-        id: 23,
         pronouns: "Vilken",
         category: "politiker",
         type: "kommenteras",
@@ -467,10 +481,9 @@ export const questions = [
             "Josef Stalin",
         ],
         options: hints.politician
-        
+
     },
     {
-        id: 24,
         pronouns: "Vilken",
         category: "film",
         type: "recenseras",
@@ -489,7 +502,6 @@ export const questions = [
         options: hints.movie
     },
     {
-        id: 25,
         pronouns: "Vilken",
         category: "films filmscen",
         type: "kommenteras",
@@ -508,7 +520,6 @@ export const questions = [
         options: hints.movie
     },
     {
-        id: 26,
         pronouns: "Vilken",
         category: "fobi",
         type: "kommenteras",
@@ -529,7 +540,6 @@ export const questions = [
         options: hints.phobia
     },
     {
-        id: 27,
         pronouns: "Vilket",
         category: "djur",
         type: "kommenteras",
@@ -550,7 +560,6 @@ export const questions = [
         options: hints.animal
     },
     {
-        id: 28,
         pronouns: "Vilken",
         category: "viral video",
         type: "kommenteras",
@@ -569,7 +578,6 @@ export const questions = [
         options: hints.viralVideo
     },
     {
-        id: 29,
         pronouns: "Vilken",
         category: "film",
         type: "recenseras",
@@ -588,7 +596,6 @@ export const questions = [
         options: hints.movie
     },
     {
-        id: 30,
         pronouns: "Vilken",
         category: "musikvideo",
         type: "kommenteras",
@@ -607,7 +614,6 @@ export const questions = [
         options: hints.musicvideo
     },
     {
-        id: 31,
         pronouns: "Vilket",
         category: "uppmärksammat brottsfall",
         type: "kommenteras",
@@ -627,7 +633,6 @@ export const questions = [
         options: hints.crime
     },
     {
-        id: 32,
         pronouns: "Vilken",
         category: "viral video",
         type: "kommenteras",
@@ -650,7 +655,6 @@ export const questions = [
         options: hints.viralVideo
     },
     {
-        id: 33,
         pronouns: "Vilken",
         category: "filmkaraktär",
         type: "kommenteras",
