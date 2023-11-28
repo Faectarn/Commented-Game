@@ -24,13 +24,15 @@ body::-webkit-scrollbar {
 }
 
 .imagebox {
-  min-height: 14rem;
+  height: 18rem;
   display: flex;
   align-items: center;
+  border-radius: 10px;
 }
 
 .huvudbild {
   width: 30rem;
+  border-radius: 10px;
 }
 
 form {
@@ -76,6 +78,10 @@ li:hover {
   background-color: Gainsboro;
 }
 
+.gif {
+  max-height: 20rem;
+}
+
 .footer {
   margin: 0 auto;
   padding: 6px;
@@ -85,4 +91,8 @@ li:hover {
   left: 0;
   right: 0;
   font-size: 10px;
+}
+
+.ReactModal__Content .ReactModal__Content--after-open {
+  inset: 20% auto auto 50%;
 }

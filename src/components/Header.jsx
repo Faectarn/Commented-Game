@@ -8,7 +8,7 @@ function Header() {
   return (
     <div className='header'>
       <div className='logo'  onClick={() => location.reload()}>
-        Commenterdle
+        Reviewed
       </div>
       <div className='modal'>
         <p>{selectedIndex + 1}</p>

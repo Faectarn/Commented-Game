@@ -1034,48 +1034,57 @@ export const hints = {
 
     celebrity: [
         
+        "Amy Adams",
         "Aziz Ansari",
+        "Ana De Armas",
+
+        "Alec Baldwin",
+        "Juliette Binoche",
+        "Alison Brie",
+        "Adrien Brody",
 
         "Graham Chapman",
         "Sacha Baron Cohen",
         "Steve Coogan",
 
         "Larry David",
+        "Julie Delpy",
+        "Adam Driver",
 
         "Tina Fey",
 
+        "Andy Garcia",
+        "Andrew Garfield",
+
+        "Armie Hammer",
+        "Amber Heard",
+        "Anthony Hopkins",
+
+        "Angelina Jolie",
         "Terry Jones",
 
         "Mindy Kaling",
         "Keegan-Michael Key",
 
         "Bret McKenzie",
+        "Alfred Molina",
+
+        "Al Pacino",
+        "Amy Poehler",
+
+        "Alan Rickman",
+
+        "Andy Samberg",
+        "Adam Sandler",
+        "Arnold Schwarzenegger",
+        "Andy Serkis",
+
+        "Anya Taylor-Joy",
+
+        "Alicia Vikander",
 
         "Kristen Wiig",
 
-        
-        "Adam Driver",
-        "Adam Sandler",
-        "Adrien Brody",
-        "Al Pacino",
-        "Alan Rickman",
-        "Alec Baldwin",
-        "Alfred Molina",
-        "Alicia Vikander",
-        "Alison Brie",
-        "Amber Heard",
-        "Amy Adams",
-        "Amy Poehler",
-        "Ana De Armas",
-        "Andrew Garfield",
-        "Andy Garcia",
-        "Andy Samberg",
-        "Andy Serkis",
-        "Angelina Jolie",
-        "Anthony Hopkins",
-        "Anya Taylor-Joy",
-        "Armie Hammer",
-        "Arnold Schwarzenegger",
         "Aubrey Plaza",
         "Ben Affleck",
         "Ben Kingsley",
